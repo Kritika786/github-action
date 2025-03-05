@@ -8,3 +8,6 @@ jobs:
           run: |
               echo "Hello hi"
               echo "goodbye"
+        - name: Get code
+          uses: actions/checkout@v3
+          
