@@ -4,10 +4,6 @@ jobs:
   first_job:
      runs-on: ubuntu-latest
      steps:
-        - name: print greeting
-          run: |
-              echo "Hello hi"
-              echo "goodbye"
         - name: Get code
           uses: actions/checkout@v3
         - name: install nodejs
@@ -18,7 +14,7 @@ jobs:
           run: npm ci
         - name: Run test
           run: npm test
-   deploy:
+  Deploy:
      runs on: ubuntu-latest
      steps: 
          - name: Get code
